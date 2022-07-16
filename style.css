@@ -358,7 +358,7 @@ section .title::after{
 /* contact section styling */
 
 .contact .title::after{
-    content: "get in touch";
+    content: "to reach me";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -473,14 +473,7 @@ footer{
     position:relative;
 }
 
-footer span a{
-    color: rgb(255, 60, 0);
-    text-decoration: none;
-}
 
-footer span a:hover{
-    text-decoration: underline;
-}
 
 .socialmedia{
     position:absolute;
