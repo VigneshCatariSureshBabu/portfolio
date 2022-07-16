@@ -171,7 +171,6 @@ html{
 
 section{
     padding-top: 65px;
-    /* padding: 100px 0; */
 }
 
 .about, .services, .skillsC, .teams, .contact, footer{
@@ -277,32 +276,10 @@ section .title::after{
 
 /* services section styling */
 
-/* .services{
-    color:rgb(255, 60, 0);
-    background: #fff;
-} */
-/* .services.title{
-    color: black;
-} */
+
 .services .title::after{
     content: "what I can do";
 }
-
-/* .services .title::before{
-    color: black;
-    background: #fff;
-} */
-
-/* .services .title::after,
-.teams .title::after{
-    color: black;   
-    background: rgb(255, 60, 0);
-    content: "what i provide";
-} */
-
-
-
-
 .services .serv-content .card{
     width: calc(33% - 20px);
     color:rgb(255, 60, 0);
@@ -317,39 +294,31 @@ section .title::after{
     background:rgb(255, 60, 0);
     color: black;
 }
-
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-
-
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-
 .services .serv-content .card i{
     font-size: 50px;
     color: rgb(255, 60, 0);
     transition: color 0.3s ease;
 }
-
 .services .serv-content .card:hover i{
      color: #fff;
 }
-
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-
 /* skills section styling */
 
 .skillsC .title::after{
-    content: "what I can do";
+    content: "what I know";
 }
-
 .skillsC .serv-content .card{
     width: calc(33% - 20px);
     color:rgb(255, 60, 0);
@@ -368,8 +337,6 @@ section .title::after{
 .skillsC .serv-content .card .box{
     transition: all 0.3s ease;
 }
-
-
 .skillsC .serv-content .card:hover .box{
     transform: scale(1.05);
 }
@@ -379,90 +346,14 @@ section .title::after{
     color: rgb(255, 60, 0);
     transition: color 0.3s ease;
 }
-
 .skillsC .serv-content .card:hover i{
      color: #fff;
 }
-
 .skillsC .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-
-/* teams section styling */
-
-.teams .title::after{
-    content: "who with me";
-}
-
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover{
-    background: rgb(255, 60, 0);
-}
-
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.teams .carousel .card img{
-    height: 150px;
-    width:150px;
-    object-fit:cover;
-    border-radius: 50%;
-    border: 5px solid r ;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid rgb(255, 60, 0)!important;
-}
-
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot.hover{
-    background: rgb(255, 60, 0)!important;
-}
-
 
 /* contact section styling */
 
@@ -580,8 +471,6 @@ footer{
     padding: 20px 23px;
     color: #fff;
     position:relative;
-    /* text-align:center; */
-    /* position: relative; */
 }
 
 footer span a{
@@ -591,11 +480,6 @@ footer span a{
 
 footer span a:hover{
     text-decoration: underline;
-}
-
-.parent{
-    /* position:absolute; */
- 
 }
 
 .socialmedia{
@@ -627,67 +511,6 @@ footer span a:hover{
 .button button:hover,a:hover{
     color: rgb(255, 60, 0);
 }
-
-/* .bubbles img{
-    width: 50px;
-    animation: bubble 7s linear infinite;
-}
-.bubbles{
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    position:absolute;
-    bottom: 0;
-} */
-
-/* @keyframes bubble {
-
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
-    
-} */
-
-/* .bubbles img:nth-child(1){
-    animation-delay: 1s;
-}
-.bubbles img:nth-child(2){
-    animation-delay: 2s;
-}
-.bubbles img:nth-child(3){
-    animation-delay: 0.5s;
-}
-.bubbles img:nth-child(4){
-    animation-delay: 1s;
-}
-.bubbles img:nth-child(5){
-    animation-delay: 2s;
-}
-.bubbles img:nth-child(6){
-    animation-delay: 0.5s;
-}
-.bubbles img:nth-child(7){
-    animation-delay: 0.5s;
-}
-.bubbles img:nth-child(8){
-    animation-delay: 1s;
-}
-.bubbles img:nth-child(9){
-    animation-delay: 2s;
-} */
-
 
 a i{
     transition: all 0.3s linear;
