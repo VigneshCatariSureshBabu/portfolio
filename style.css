@@ -174,12 +174,12 @@ section{
     /* padding: 100px 0; */
 }
 
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skillsC, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.skillsC .serv-content,
 .contact .contact-content{
   display: flex;
   flex-wrap: wrap;
@@ -346,90 +346,50 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
-    content: "what I know"
+.skillsC .title::after{
+    content: "what I can do";
 }
 
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.skills .skills-content .left p{
-    text-align: justify;
-}
-
-.skills .skills-content .left a{
-    display: inline-block;
-    background: rgb(255, 60, 0);
-    color:#fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
+.skillsC .serv-content .card{
+    width: calc(33% - 20px);
+    color:rgb(255, 60, 0);
+    background: white;
+    text-align:center;
     border-radius: 6px;
-    border:2px solid rgb(255, 60, 0);
+    padding: 20px 25px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.skillsC .serv-content .card:hover{
+    background:rgb(255, 60, 0);
+    color: black;
+}
+
+.skillsC .serv-content .card .box{
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover{
+
+.skillsC .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.skillsC .serv-content .card i{
+    font-size: 50px;
     color: rgb(255, 60, 0);
-    background:none;
+    transition: color 0.3s ease;
 }
 
-
-.skills .skills-content .right .bar{
-    margin-bottom: 15px;
+.skillsC .serv-content .card:hover i{
+     color: #fff;
 }
 
-.skills .skills-content .right .info{
-    display:flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skills-content .right span{
+.skillsC .serv-content .card .text{
+    font-size: 25px;
     font-weight: 500;
-    font-size:18px;
+    margin: 10px 0 7px 0;
 }
 
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before{
-    content:"";
-    position: absolute;
-    height: 100%;
-    left:0;
-    top:0;
-    background:rgb(255, 60, 0);
-}
-
-.skills-content .right .html::before{
-    width:90%;
-}
-.skills-content .right .css::before{
-    width:90%;
-}
-.skills-content .right .javascript::before{
-    width:90%;
-}
-.skills-content .right .nodejs::before{
-    width:90%;
-}
-.skills-content .right .mysql::before{
-    width:90%;
-}
 
 /* teams section styling */
 
@@ -752,15 +712,6 @@ a:hover i{
 .fa-twitter{
     color: #0097e6;
 }
-
-
-
-
-
-
-
-
-
 
 /* media query starts */
 
