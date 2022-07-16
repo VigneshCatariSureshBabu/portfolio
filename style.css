@@ -660,10 +660,10 @@ footer span a:hover{
     box-shadow: 2px 0px 2px 2px;
 }
 
-.button a{
+.button button,a{
     color: white;
 }
-.button a:hover{
+.button button:hover,a:hover{
     color: rgb(255, 60, 0);
 }
 
