@@ -660,7 +660,14 @@ footer span a:hover{
     box-shadow: 2px 0px 2px 2px;
 }
 
-.bubbles img{
+.button a{
+    color: white;
+}
+.button a:hover{
+    color: rgb(255, 60, 0);
+}
+
+/* .bubbles img{
     width: 50px;
     animation: bubble 7s linear infinite;
 }
@@ -671,7 +678,7 @@ footer span a:hover{
     justify-content: space-around;
     position:absolute;
     bottom: 0;
-}
+} */
 
 /* @keyframes bubble {
 
