@@ -30,14 +30,14 @@ $(document).ready(function(){
     // typing animation script
 
     var typed = new Typed(".homeTyping",{
-        strings: ["Full Stack Developer","Data Scientist","Freelancer"],
+        strings: ["Full Stack Developer", "AI Intern"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
     })
 
     var typed = new Typed(".aboutTyping",{
-        strings: ["","Full Stack Developer", "Data Scientist", "Freelancer"],
+        strings: ["","Full Stack Developer", "AI Intern"],
         typeSpeed: 80,
         backSpeed: 60,
         loop:true
