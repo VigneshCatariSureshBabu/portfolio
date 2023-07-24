@@ -170,10 +170,11 @@ section{
     padding-top: 65px;
 }
 
-.about, .services, .skillsC, .teams, .contact, footer{
+.about, .services, .skillsC, .teams, .contact, footer, .education{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.education .education-content,
 .services .serv-content,
 .skillsC .serv-content,
 .contact .contact-content{
@@ -271,9 +272,35 @@ section .title::after{
 
 /* services section styling */
 .services .title::after{
-    content: "what I can do";
+    content: "what I did";
 }
 .services .serv-content .card{
+    
+    color:rgb(255, 60, 0);
+    background: black;
+    text-align:center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor:pointer;
+}
+.services .serv-content .card:hover{
+    background:rgb(255, 60, 0);
+    color: black;
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: rgb(255, 60, 0);
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+     color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/*.services .serv-content .card{
     width: calc(33% - 20px);
     color:rgb(255, 60, 0);
     background: black;
@@ -305,7 +332,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+}*/
 
 /* skills section styling */
 
@@ -539,6 +566,14 @@ a:hover i{
 
 }
 
+@media (max-width: 1104px){
+    .education .education-content .left img{
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
 @media (max-width: 991px){
     .max-width{
         padding:0 50px;
@@ -601,6 +636,17 @@ a:hover i{
     .about .about-content .right{
         flex: 100%;
     }
+    .education .education-content .column{
+        width:100%;
+    }
+    .education .education-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .education .education-content .right{
+        flex: 100%;
+    }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom :20px;
@@ -628,6 +674,9 @@ a:hover i{
     .services .serv-content .card{
         width: 100%;
     }
+    .education .education-content .card{
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px){
@@ -639,4 +688,133 @@ a:hover i{
     }    
 }
 
+/* Experience*/
 
+ .timeline-container {
+    width: 80%;
+    padding: 0px 0;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ .timeline-container:before { /*This is the line down the middle*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #000000;
+    z-index: 1
+ }
+ .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ .timeline-block-right {
+    float: right;
+ }
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #e84118;
+    margin-top: 10px;
+    z-index: 9999
+ }
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+ }
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ .timeline-content span {
+    font-size: 15px;
+    color: #a4a4a4;
+ }
+ .timeline-content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+ }
+
+ @media screen and (max-width: 768px) {
+    .timeline-container:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+ }
+ /* Education */
+
+.education .title::after{
+   content: "what I studied";
+}
+
+.education .education-content .card{
+    width: calc(33% - 20px);
+    color:rgb(19, 5, 1);
+    background: rgb(255, 60, 0);
+    text-align:center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.education .education-content .card:hover{
+    color:rgb(255, 60, 0);
+    background: black;
+}
+
+.education .education-content .card .box{
+    transition: all 0.3s ease;
+}
+.education .education-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.education .education-content .card i{
+    font-size: 50px;
+    color: black;
+    transition: color 0.3s ease;
+}
+.education .education-content .card:hover i{
+     color: rgb(255, 60, 0);
+}
+.education .education-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
